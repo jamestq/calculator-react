@@ -27,11 +27,13 @@ function App() {
   };
  
   function resetInput(e) { 
-    // Add the code for the resetInput function 
+    e.preventDefault();
+    inputRef.current.value = 0;
   }; 
  
   function resetResult(e) { 
-  	// Add the code for the resetResult function 
+    e.preventDefault();
+  	setResult((result) => 0);
   }; 
  
   return ( 
